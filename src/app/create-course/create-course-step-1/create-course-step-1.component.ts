@@ -64,4 +64,10 @@ export class CreateCourseStep1Component implements OnInit {
       return this.form.controls['title'];
   }
 
+  get downloadsAllowed()
+  {
+    return this.form.controls['downloadsAllowed'];
+  }
+  
+
 }
