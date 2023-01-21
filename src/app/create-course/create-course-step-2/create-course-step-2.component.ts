@@ -31,6 +31,13 @@ export class CreateCourseStep2Component implements OnInit {
 
   constructor(private fb: FormBuilder) {}
 
+  isUploadValid(): boolean {
+    let thumbnail = this.form.controls["thumbnail"];
+    if (thumbnail.errors == null) return true;
+    if (thumbnail.errors.requiredFileType == "image/png") return false;
+    return true;
+  }
+
   ngOnInit() {
     //valueChanges you can apply on field and complete Formlevel
     this.form.controls["courseType"].valueChanges.subscribe(() => {
@@ -43,8 +50,8 @@ export class CreateCourseStep2Component implements OnInit {
         priceControl.enable({ emitEvent: false });
       }
     });
-    // this.form.valueChanges.subscribe((val) => {
-    //   let test = val;
+    // this.form.controls["thumbnail"].valueChanges.subscribe((val) => {
+    //   alert("Test Upload Change");
     // });
   }
 }

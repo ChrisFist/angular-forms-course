@@ -96,7 +96,7 @@ import { LoginReactiveComponent } from "./login-reactive/login-reactive.componen
   providers: [
     CoursesService,
     CourseResolver,
-    { provide: MAT_DATE_LOCALE, useValue: "de-DE" }, //localize you date
+    { provide: MAT_DATE_LOCALE, useValue: "de-DE" }, //localize your date
   ],
   bootstrap: [AppComponent],
 })
