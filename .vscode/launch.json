@@ -18,17 +18,17 @@
         "url": "http://localhost:9876/debug.html"
       },
   
-      {
-        "type": "chrome",
-        "request": "attach",
-        "name": "Attach to Chrome",
-        "port": 9222,
-        "webRoot": "${workspaceFolder}",
-        "resolveSourceMapLocations": [
-          "${workspaceFolder}/**",
-          "!**/node_modules/**"
-        ],
-     }
+    //   {
+    //     "type": "chrome",
+    //     "request": "attach",
+    //     "name": "Attach to Chrome",
+    //     "port": 9222,
+    //     "webRoot": "${workspaceFolder}",
+    //     "resolveSourceMapLocations": [
+    //       "${workspaceFolder}/**",
+    //       "!**/node_modules/**"
+    //     ],
+    //  }
     
     ]
   }
